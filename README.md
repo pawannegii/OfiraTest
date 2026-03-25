@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤝 Your Sathi
 
-## Getting Started
+**Your Sathi** is a simple idea built for real-life problems.
 
-First, run the development server:
+Ever forgotten your keys at home?
+Needed someone to feed your dog while you're away?
+Or just wanted to earn a bit by helping someone nearby?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+That’s exactly what this is for.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💡 What is Your Sathi?
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Your Sathi is a **hyperlocal platform** where people in the same city can:
 
-## Learn More
+* Post small, urgent tasks
+* Help others and earn money
+* Get things done quickly without stress
 
-To learn more about Next.js, take a look at the following resources:
+It’s not freelancing.
+It’s not delivery apps.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+It’s just people helping people — instantly.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* 📝 Post a task in seconds
+* 📍 Find nearby tasks
+* 🤝 Accept tasks and connect
+* 💬 Simple chat interface
+* 👤 User accounts (login/signup)
+* 🌗 Clean light/dark mode
+* ⭐ Rating system (UI for now)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🧠 Why we built this
+
+In real life, most problems are small… but urgent.
+
+You don’t need a full service.
+You just need **someone nearby who can help right now**.
+
+At the same time, many people (especially students) are looking for **quick ways to earn**.
+
+Your Sathi connects both.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React / Next.js
+* **Styling:** Tailwind CSS
+* **Auth:** Firebase Authentication
+* **Database:** (Optional) Firebase Firestore / Mock Data
+
+---
+
+## ⚡ How it works
+
+1. Sign up / log in
+2. Post a task (example: “Deliver keys”)
+3. Someone nearby accepts it
+4. Connect via chat
+5. Task completed 🎉
+
+---
+
+## 🎯 Current Status
+
+This is an **MVP (Minimum Viable Product)** built for a hackathon.
+
+Things like payments, verification, and advanced safety features are planned for future development.
+
+---
+
+## 🔮 Future Plans
+
+* 💸 Secure payment integration
+* 📍 Real-time location matching
+* 🔐 User verification system
+* ⭐ Real rating & review system
+* 📸 Task proof uploads
+
+---
+
+## 🙌 Final Thought
+
+Sometimes, all you need is a little help.
+
+And sometimes, you can be that help for someone else.
+
+**Your Sathi — because help should never feel far away.**
