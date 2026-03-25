@@ -1,101 +1,154 @@
-import Image from "next/image";
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { 
+  ArrowRight, 
+  MapPin, 
+  Wallet, 
+  ShieldCheck, 
+  Utensils, 
+  Key, 
+  Dog, 
+  Package, 
+  Users, 
+  ShoppingCart, 
+  Wrench, 
+  HelpCircle 
+} from "lucide-react"
+
+const categories = [
+  { name: "Tiffin Delivery", icon: Utensils },
+  { name: "Key Handover", icon: Key },
+  { name: "Pet Care", icon: Dog },
+  { name: "Parcel Pickup", icon: Package },
+  { name: "Queue Standing", icon: Users },
+  { name: "Grocery Run", icon: ShoppingCart },
+  { name: "Quick Help", icon: Wrench },
+  { name: "Other", icon: HelpCircle },
+]
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col min-h-screen bg-background">
+      {/* Hero Section */}
+      <section className="px-6 py-24 md:py-32 max-w-[1120px] mx-auto w-full flex flex-col items-center text-center">
+        <div className="inline-flex items-center rounded-full border border-border bg-muted/50 px-3 py-1 text-sm font-medium text-muted-foreground mb-8">
+          <span className="flex h-2 w-2 rounded-full bg-[#34C759] mr-2"></span>
+          Live in Koramangala & Indiranagar
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        
+        <h1 className="text-[40px] md:text-[56px] font-bold tracking-tight text-primary leading-[1.1] max-w-3xl mb-6">
+          Your city. Your people. <br />
+          <span className="text-muted-foreground hidden sm:inline">Your help. </span>
+          <span className="text-accent sm:hidden">Your help. </span>
+        </h1>
+        
+        <p className="text-[18px] md:text-[20px] text-muted-foreground max-w-2xl mb-10 leading-[1.5]">
+          Connect with locals for urgent micro-tasks. Apna locality batao — baaki hum dekhenge. Let's make everyday life a little easier, together.
+        </p>
+        
+        <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <Link href="/feed" className="w-full sm:w-auto">
+            <Button size="lg" className="w-full sm:w-auto text-[16px]">
+              Find Tasks Nearby
+            </Button>
+          </Link>
+          <Link href="/post" className="w-full sm:w-auto">
+            <Button variant="secondary" size="lg" className="w-full sm:w-auto text-[16px]">
+              Post a Task <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="bg-muted py-24">
+        <div className="max-w-[1120px] mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-[32px] font-semibold tracking-tight text-primary mb-4">How Your Sathi Works</h2>
+            <p className="text-[18px] text-muted-foreground">Simple, transparent, and hyperlocal.</p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="bg-transparent border-none shadow-none hover:shadow-none hover:translate-y-0 p-0 text-center">
+              <CardContent className="p-0 flex flex-col items-center">
+                <div className="h-16 w-16 bg-white rounded-full shadow-apple flex items-center justify-center text-accent mb-6">
+                  <MapPin className="h-8 w-8" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-[18px] font-semibold mb-3">1. Post or Find</h3>
+                <p className="text-[15px] text-muted-foreground leading-relaxed">
+                  Post what you need done, or browse tasks posted by verified neighbors in your locality.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-transparent border-none shadow-none hover:shadow-none hover:translate-y-0 p-0 text-center">
+              <CardContent className="p-0 flex flex-col items-center">
+                <div className="h-16 w-16 bg-white rounded-full shadow-apple flex items-center justify-center text-accent mb-6">
+                  <ShieldCheck className="h-8 w-8" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-[18px] font-semibold mb-3">2. Connect Securely</h3>
+                <p className="text-[15px] text-muted-foreground leading-relaxed">
+                  Chat in real-time. Payments are held in escrow. Trust is backed by community ratings.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-transparent border-none shadow-none hover:shadow-none hover:translate-y-0 p-0 text-center">
+              <CardContent className="p-0 flex flex-col items-center">
+                <div className="h-16 w-16 bg-white rounded-full shadow-apple flex items-center justify-center text-accent mb-6">
+                  <Wallet className="h-8 w-8" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-[18px] font-semibold mb-3">3. Complete & Earn</h3>
+                <p className="text-[15px] text-muted-foreground leading-relaxed">
+                  Get the job done. Payment is instantly released to your wallet. Aapki kamai, aapke haath.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Categories */}
+      <section className="py-24 px-6 max-w-[1120px] mx-auto w-full">
+        <div className="flex justify-between items-end mb-12">
+          <div>
+            <h2 className="text-[32px] font-semibold tracking-tight text-primary mb-4">What's happening nearby</h2>
+            <p className="text-[18px] text-muted-foreground">Categories to help you get started.</p>
+          </div>
+          <div className="hidden sm:block">
+            <Link href="/post" className="text-accent font-medium hover:underline flex items-center">
+              View all <ArrowRight className="ml-1 h-4 w-4 inline" />
+            </Link>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {categories.map((category) => (
+            <Link key={category.name} href={`/feed?category=${encodeURIComponent(category.name)}`}>
+              <Card className="group cursor-pointer hover:border-accent/30 transition-all text-center flex flex-col items-center justify-center py-8">
+                <div className="bg-muted p-4 rounded-full group-hover:bg-accent/10 transition-colors mb-4 text-[#1D1D1F] group-hover:text-accent">
+                  <category.icon className="h-6 w-6" strokeWidth={1.5} />
+                </div>
+                <h4 className="font-medium text-[15px] text-primary">{category.name}</h4>
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </section>
+      
+      {/* CTA Section */}
+      <section className="bg-primary text-primary-foreground py-24 text-center px-6">
+        <h2 className="text-[32px] font-semibold tracking-tight mb-6 text-white">Ready to help your neighbors?</h2>
+        <p className="text-[18px] text-[#AEAEB2] max-w-xl mx-auto mb-10">
+          Join thousands of verified locals earning quick money and helping each other out.
+        </p>
+        <Link href="/signup">
+          <Button className="bg-[#FFFFFF] text-[#1D1D1F] hover:bg-[#F5F5F7] h-12 px-8 text-[16px]">
+            Create a Free Account
+          </Button>
+        </Link>
+      </section>
     </div>
-  );
+  )
 }
