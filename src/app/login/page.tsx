@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, Leaf } from "lucide-react"
 
 export default function LoginPage() {
   return (
@@ -11,9 +11,10 @@ export default function LoginPage() {
       </Link>
       
       <div className="w-full max-w-[400px] flex flex-col">
-        <div className="flex -space-x-1.5 justify-center mb-6">
-          <div className="h-6 w-6 rounded-[6px] bg-accent opacity-80" />
-          <div className="h-6 w-6 rounded-[6px] border border-background bg-accent" />
+        <div className="flex justify-center mb-6">
+          <div className="bg-accent/10 p-3 rounded-2xl flex items-center justify-center">
+            <Leaf className="h-10 w-10 text-accent" strokeWidth={2.5} />
+          </div>
         </div>
         
         <div className="text-center mb-8">

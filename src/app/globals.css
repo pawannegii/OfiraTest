@@ -23,7 +23,7 @@
     --muted: 240 5% 96%; /* #F5F5F7 */
     --muted-foreground: 240 2% 45%; /* #6E6E73 */
     
-    --accent: 210 100% 45%; /* #0071E3 */
+    --accent: 160 84% 39%; /* Mint Green */
     --accent-foreground: 0 0% 100%;
     
     --success: 135 59% 49%; /* #34C759 */
@@ -33,7 +33,7 @@
 
     --border: 240 6% 90%; /* #E5E5EA */
     --input: 240 6% 90%; /* #E5E5EA */
-    --ring: 210 100% 45%; /* #0071E3 */
+    --ring: 160 84% 39%; /* Mint Green */
     
     --radius: 1rem;
   }
