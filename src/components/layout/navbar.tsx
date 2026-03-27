@@ -12,7 +12,7 @@ export function Navbar() {
             <div className="h-5 w-5 rounded-[4px] border border-background bg-accent" />
           </div>
           <span className="text-[18px] font-semibold tracking-tight text-[#1D1D1F]">
-            <span className="text-[#6E6E73] font-medium">Your</span> Sathi
+            Ofira
           </span>
         </Link>
         <nav className="flex items-center gap-6 text-[15px] font-medium text-muted-foreground">

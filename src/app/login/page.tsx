@@ -18,7 +18,7 @@ export default function LoginPage() {
         
         <div className="text-center mb-8">
           <h1 className="text-[28px] font-semibold tracking-tight text-primary mb-2">Welcome back</h1>
-          <p className="text-[15px] text-muted-foreground">Log in to your Your Sathi account to continue.</p>
+          <p className="text-[15px] text-muted-foreground">Log in to your Ofira account to continue.</p>
         </div>
         
         <form className="flex flex-col gap-4">

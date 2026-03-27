@@ -65,7 +65,7 @@ export default function Home() {
       <section className="bg-muted py-24">
         <div className="max-w-[1120px] mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-[32px] font-semibold tracking-tight text-primary mb-4">How Your Sathi Works</h2>
+            <h2 className="text-[32px] font-semibold tracking-tight text-primary mb-4">How Ofira Works</h2>
             <p className="text-[18px] text-muted-foreground">Simple, transparent, and hyperlocal.</p>
           </div>
           

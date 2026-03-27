@@ -7,7 +7,7 @@ import { BottomNav } from "@/components/layout/bottom-nav";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Your Sathi - Local micro-gigs",
+  title: "Ofira - Local micro-gigs",
   description: "Your city. Your people. Your help.",
 };
 

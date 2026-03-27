@@ -1,6 +1,6 @@
-# 🤝 Your Sathi
+# 🤝 Ofira
 
-**Your Sathi** is a simple idea built for real-life problems.
+**Ofira** is a simple idea built for real-life problems.
 
 Ever forgotten your keys at home?
 Needed someone to feed your dog while you're away?
@@ -10,9 +10,9 @@ That’s exactly what this is for.
 
 ---
 
-## 💡 What is Your Sathi?
+## 💡 What is Ofira?
 
-Your Sathi is a **hyperlocal platform** where people in the same city can:
+Ofira is a **hyperlocal platform** where people in the same city can:
 
 * Post small, urgent tasks
 * Help others and earn money
@@ -46,7 +46,7 @@ You just need **someone nearby who can help right now**.
 
 At the same time, many people (especially students) are looking for **quick ways to earn**.
 
-Your Sathi connects both.
+Ofira connects both.
 
 ---
 
@@ -93,4 +93,4 @@ Sometimes, all you need is a little help.
 
 And sometimes, you can be that help for someone else.
 
-**Your Sathi — because help should never feel far away.**
+**Ofira — because help should never feel far away.**
