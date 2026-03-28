@@ -5,36 +5,53 @@
 @layer base {
   :root {
     /* Apple-inspired Minimal Premium Palette */
-    --background: 0 0% 100%; /* #FFFFFF */
-    --foreground: 240 5% 12%; /* #1D1D1F */
-    
-    --card: 0 0% 100%; /* #FFFFFF */
-    --card-foreground: 240 5% 12%; /* #1D1D1F */
-    
+    --background: 0 0% 100%;
+    /* #FFFFFF */
+    --foreground: 240 5% 12%;
+    /* #1D1D1F */
+
+    --card: 0 0% 100%;
+    /* #FFFFFF */
+    --card-foreground: 240 5% 12%;
+    /* #1D1D1F */
+
     --popover: 0 0% 100%;
     --popover-foreground: 240 5% 12%;
-    
-    --primary: 240 5% 12%; /* #1D1D1F */
-    --primary-foreground: 0 0% 100%; /* #FFFFFF */
-    
-    --secondary: 0 0% 100%; /* #FFFFFF */
-    --secondary-foreground: 240 5% 12%; /* #1D1D1F */
-    
-    --muted: 240 5% 96%; /* #F5F5F7 */
-    --muted-foreground: 240 2% 45%; /* #6E6E73 */
-    
-    --accent: 160 84% 39%; /* Mint Green */
+
+    --primary: 240 5% 12%;
+    /* #1D1D1F */
+    --primary-foreground: 0 0% 100%;
+    /* #FFFFFF */
+
+    --secondary: 0 0% 100%;
+    /* #FFFFFF */
+    --secondary-foreground: 240 5% 12%;
+    /* #1D1D1F */
+
+    --muted: 240 5% 96%;
+    /* #F5F5F7 */
+    --muted-foreground: 240 2% 45%;
+    /* #6E6E73 */
+
+    --accent: 160 84% 39%;
+    /* Mint Green */
     --accent-foreground: 0 0% 100%;
-    
-    --success: 135 59% 49%; /* #34C759 */
-    --warning: 36 100% 52%; /* #FF9F0A */
-    --destructive: 0 100% 60%; /* #FF3B30 */
+
+    --success: 135 59% 49%;
+    /* #34C759 */
+    --warning: 36 100% 52%;
+    /* #FF9F0A */
+    --destructive: 0 100% 60%;
+    /* #FF3B30 */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 6% 90%; /* #E5E5EA */
-    --input: 240 6% 90%; /* #E5E5EA */
-    --ring: 160 84% 39%; /* Mint Green */
-    
+    --border: 240 6% 90%;
+    /* #E5E5EA */
+    --input: 240 6% 90%;
+    /* #E5E5EA */
+    --ring: 160 84% 39%;
+    /* Mint Green */
+
     --radius: 1rem;
   }
 }
@@ -43,6 +60,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -52,14 +70,17 @@
   .shadow-apple {
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   }
+
   .shadow-apple-hover {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
   }
+
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-} 
+}
